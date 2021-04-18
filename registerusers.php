@@ -12,7 +12,7 @@ if(isset($_POST['registerbtn'])){
     $result = mysqli_query($conn,$sql);
 
     if($result){    //checking user data is store in db or not
-        echo"User Registered";  
+        // echo"User Registered"; 
     }else{
         echo"Sry...!!...User Not Registered...!!";
     }
@@ -26,7 +26,7 @@ if(isset($_POST['registerbtn'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
+    <title>PHMS</title>
     <link rel="stylesheet" href="Css/style.css">
 </head>
 <body>
