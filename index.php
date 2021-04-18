@@ -53,7 +53,7 @@ if(isset($_POST['Loginbtn'])){
                 <div class="inputBox">
                     <input type="submit" value="Login" name="Loginbtn">
                 </div>
-                <p class="forget">Forget Password?<a href="#">click here</a></p>
+                <!-- <p class="forget">Forget Password?<a href="#">click here</a></p> -->
                 <p class="forget">Don't have an account? <a href="registerusers.php">Sign up</a></p>       
 </form>
 </div>
