@@ -28,19 +28,6 @@
                 <div class="inputBox">
                     <input type="password" placeholder="Password">
                 </div>
-                <!-- <div class="inputBox">
-                <label >I am a:</label><br>
-			    <div class="user">
-				<label>
-					<input type="radio" name="Usertype" id="doc" value="Doctor" >
-					<span class="Buyer">Doctor</span>
-				</label>
-				<label>
-					<input type="radio" name="Usertype" id="recp" value="Receptionlist">
-					<span class="Seller">Receptionlist</span>
-				</label>
-					</div>
-				</div> -->
                 <div class="inputBox">
                     <input type="submit" value="Login">
                 </div>
