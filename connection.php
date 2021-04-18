@@ -35,7 +35,8 @@ $databasename = mysqli_select_db($conn,'PHMS');
 $sql1 = "CREATE TABLE IF NOT EXISTS users (
     id int(255) PRIMARY KEY AUTO_INCREMENT,
     username varchar(255),
-    password varchar(255)
+    password varchar(255),
+    usertype varchar(100)
     )";
 $result1 = mysqli_query($conn, $sql1);
 

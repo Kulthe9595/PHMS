@@ -1,3 +1,25 @@
+<?php
+// adding connection file 
+include('connection.php');
+
+// IF user click on register button then line 6 to 19 work
+if(isset($_POST['Loginbtn'])){
+    $username = $_POST['username'];     // accepting user enter username  and store into $username php varible
+    $password = $_POST['password'];     // accepting user enter password  and store into $password php varible
+
+
+    $sql = "SELECT * FROM `users` WHERE username = '$username' && password = '$password'";
+    $result = mysqli_query($conn,$sql);
+
+    if($result){    //checking user data is store in db or not
+        echo"User logined"; 
+    }else{
+        echo"Sry you are not able to login";
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,30 +43,17 @@
         <div class="container">
         <div class="form">
             <h2>Login Form</h2>
-            <form>
+            <form method="POST">
                 <div class="inputBox">
-                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="Username" name="username">
                 </div>
                 <div class="inputBox">
-                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Password" name="password">
                 </div>
-                <!-- <div class="inputBox">
-                <label >I am a:</label><br>
-			    <div class="user">
-				<label>
-					<input type="radio" name="Usertype" id="doc" value="Doctor" >
-					<span class="Buyer">Doctor</span>
-				</label>
-				<label>
-					<input type="radio" name="Usertype" id="recp" value="Receptionlist">
-					<span class="Seller">Receptionlist</span>
-				</label>
-					</div>
-				</div> -->
                 <div class="inputBox">
-                    <input type="submit" value="Login">
+                    <input type="submit" value="Login" name="Loginbtn">
                 </div>
-                <p class="forget">Forget Password?<a href="#">click here</a></p>
+                <!-- <p class="forget">Forget Password?<a href="#">click here</a></p> -->
                 <p class="forget">Don't have an account? <a href="registerusers.php">Sign up</a></p>       
 </form>
 </div>
