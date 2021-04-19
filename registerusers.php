@@ -59,7 +59,7 @@ if(isset($_POST['registerbtn'])){
 					<span class="Buyer">Doctor</span>
 				</label>
 				<label>
-					<input type="radio" name="Usertype" id="Seller" value="Receptionlist">
+					<input type="radio" name="Usertype" id="Seller" value="Receptionist">
 					<span class="Seller">Receptionlist</span>
 				</label>
 					</div>
