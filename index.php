@@ -10,9 +10,12 @@ if(isset($_POST['Loginbtn'])){
 
     $sql = "SELECT * FROM `users` WHERE username = '$username' && password = '$password'";
     $result = mysqli_query($conn,$sql);
-
-    if($result){    //checking user data is store in db or not
-        echo"User logined"; 
+    $row = $result->fetch_assoc();
+    print_r($row);
+    if($row['usertype'] == 'Doctor'){    //checking user data is store in db or not
+        echo"Docotor logined"; 
+    }else if($row['usertype'] == "Receptionist"){
+        echo"Receptionist Logined "; 
     }else{
         echo"Sry you are not able to login";
     }
