@@ -12,8 +12,9 @@ if(isset($_POST['Loginbtn'])){
     $result = mysqli_query($conn,$sql);
     $row = $result->fetch_assoc();
     print_r($row);
-    if($row['usertype'] == 'Doctor'){    //checking user data is store in db or not
+    if($row['usertype'] == 'Doctor'){    
         echo"Docotor logined"; 
+        
     }else if($row['usertype'] == "Receptionist"){
         echo"Receptionist Logined "; 
     }else{
