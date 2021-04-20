@@ -7,6 +7,6 @@
     <title>PHMS-Doctor</title>
 </head>
 <body>
-    
+    <h1>Welcome Doctor</h1>
 </body>
 </html>

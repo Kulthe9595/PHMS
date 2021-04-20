@@ -7,6 +7,6 @@
     <title>PHMS-Receptionist</title>
 </head>
 <body>
-    
+<h1>Welcome Receptionist</h1>
 </body>
 </html>
