@@ -14,7 +14,7 @@ if(isset($_POST['Loginbtn'])){
     print_r($row);
     if($row['usertype'] == 'Doctor'){    
         echo"Docotor logined"; 
-        header("location: Doctorhomepage.php");
+        header("location: Drhomepage.php");
     }else if($row['usertype'] == "Receptionist"){
         echo"Receptionist Logined "; 
         header("location: ReceptionistHomepage.php");
