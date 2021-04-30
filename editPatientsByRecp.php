@@ -1,4 +1,5 @@
 <?php
+// include('recpnavbar.php');
 include('connection.php');
 $id = $_GET['id'];
 

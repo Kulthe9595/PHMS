@@ -13,16 +13,14 @@
 
 <body>
     <nav class="navbar" id="nav">
-        <!-- <button class="toggle-menu" id="menu">
-            <i class="fas fa-bars"></i>
-        </button> -->
-       <div class="item-list">
+        <div class="item-list">
                 <span>P H M S</span>
+                <span>Wlcm DR </span>
             </div>
         <div class="nav-items">
             <div class="admin-profile">
                 <div class="icons">
-                    <img src="img/user.png" alt="admin">
+                    <img src="img/drimg.png" alt="admin">
                 </div>
                 <span>Admin</span>
             </div>
@@ -34,15 +32,9 @@
             </div>
             <div class="item-list">
                 <div class="icons">
-                    <i class="fas fa-users"></i>
-                </div>
-                <span> <a href="AddPatientsByRecp.php">Patients</a></span>
-            </div>
-            <div class="item-list">
-                <div class="icons">
                     <i class="fas fa-list"></i>
                 </div>
-                <span><a href="listofPatientsByRecp.php">Patient List</a></span>
+                <span><a href="DRlistofPatients.php">Patient List</a></span>
             </div>
             <div class="logout">
                 <div class="icons">
