@@ -2,6 +2,8 @@
 // adding connection file 
 include('connection.php');
 
+
+
 // IF user click on register button then line 6 to 19 work
 if(isset($_POST['Loginbtn'])){
     $username = $_POST['username'];     // accepting user enter username  and store into $username php varible
@@ -11,12 +13,14 @@ if(isset($_POST['Loginbtn'])){
     $sql = "SELECT * FROM `users` WHERE username = '$username' && password = '$password'";
     $result = mysqli_query($conn,$sql);
     $row = $result->fetch_assoc();
-    print_r($row);
-    if($row['usertype'] == 'Doctor'){    
+    // print_r($row);
+    session_start();
+    $_SESSION['username']= $row['username'];
+    if($row['usertype'] == 'Doctor'){ 
         echo"Docotor logined"; 
         header("location: Drhomepage.php");
     }else if($row['usertype'] == "Receptionist"){
-        echo"Receptionist Logined "; 
+        echo"Receptionist Logged "; 
         header("location: ReceptionistHomepage.php");
     }else{
         echo"Sry you are not able to login";
