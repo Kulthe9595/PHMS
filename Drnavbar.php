@@ -1,3 +1,8 @@
+<?php
+session_start();
+include('session.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,7 +45,7 @@
                 <div class="icons">
                     <i class="fas fa-sign-out-alt"></i>
                 </div>
-                <span>Logout</span>
+                <span><a href="logout.php">Logout</span>
             </div>
         </div>
     </nav>
