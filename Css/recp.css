@@ -1,0 +1,67 @@
+.Glasscontainner{
+    margin-top: -490px;
+    margin-left: 30px;
+    width: 1050px;
+    height: 150px;
+    background-color: #ffffff40;
+    backdrop-filter: blur(20px);
+    border: 2px solid #ffffff30;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px -5px #00000030;
+    padding: 15px;
+}
+.Glasscontiner2{
+    margin-top: 250px;
+    margin-left: -1050px;
+    width: 1050px;
+    /* height: 20vh; */
+    height: 400px;
+    background-color: #ffffff40;
+    backdrop-filter: blur(20px);
+    border: 2px solid #ffffff30;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px -5px #00000030;
+    padding: 15px;
+
+}
+
+
+
+
+/* form */
+
+
+.form .inputBox input
+{
+    width: 250px;
+    background: rgba(255,255,255,0.2);
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 35px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    /* color: #fff; */
+    color:black;
+}
+
+
+
+.form .inputBox input[type="submit"]
+{
+    background: #fff;
+    color:black;
+    max-width: 110px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight:600;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+
+}

@@ -1,11 +1,9 @@
-<<<<<<< HEAD
+
 <?php
-session_start();
-include('session.php');
+// session_start();
+// include('session.php');
 ?>
 
-=======
->>>>>>> 856e7c7e2911a7837f357a7ce174a50d31eadddc
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,11 +46,7 @@ include('session.php');
                 <div class="icons">
                     <i class="fas fa-sign-out-alt"></i>
                 </div>
-<<<<<<< HEAD
                 <span><a href="logout.php">Logout</span>
-=======
-                <span>Logout</span>
->>>>>>> 856e7c7e2911a7837f357a7ce174a50d31eadddc
             </div>
         </div>
     </nav>
