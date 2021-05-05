@@ -44,6 +44,12 @@
                 </div>
                 <span><a href="listofPatientsByRecp.php">Patient List</a></span>
             </div>
+            <div class="item-list">
+                <div class="icons">
+                    <i class="fas fa-list"></i>
+                </div>
+                <span><a href="#">View</a></span>
+            </div>
             <div class="logout">
                 <div class="icons">
                     <i class="fas fa-sign-out-alt"></i>

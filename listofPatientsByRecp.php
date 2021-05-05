@@ -13,18 +13,22 @@ include('connection.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Dr.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="bgGlass">
     <table>
     <form method="POST">
+    <table class="content-table1">
+    <thead>
     <th>Name</th>
     <th>City</th>
     <th>Mob</th>
     <th>Age</th>
     <th>Gender</th>
     <th>Action</th>
-
+    </thead>
     <?php
 
         $sql = "SELECT * FROM `Patients`";
@@ -43,5 +47,6 @@ include('connection.php');
     ?>
     </form>
     </table>
+    </div>
 </body>
 </html>
