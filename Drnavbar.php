@@ -19,6 +19,9 @@
 
 <body>
     <nav class="navbar" id="nav">
+    <button class="toggle-menu" id="menu">
+            <i class="fas fa-bars"></i>
+        </button>
         <div class="item-list">
                 <span>P H M S</span>
                 <span>Wlcm DR </span>
@@ -52,7 +55,7 @@
     </nav>
 
     <!-- javascript -->
-    <!-- <script src="main.js"></script> -->
+    <script src="main.js"></script>
 </body>
 
 </html>

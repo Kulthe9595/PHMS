@@ -17,12 +17,12 @@ if(isset($_POST['save'])){
         $result=  mysqli_query($conn,$sql);
     
         if($result){
-            echo"Patient saved";
+            echo '<script>alert("New Patient Saved.")</script>';
         }else{
-            echo"Patient NOt saved";
+            echo '<script>alert("New Patient Is Not Saved.")</script>';
         }
     }else{
-        echo"Please enter all details";
+        echo '<script>alert("Please Enter All details.")</script>';
     }
 }else{
     // echo"btn  not pressed";
@@ -41,33 +41,33 @@ if(isset($_POST['save'])){
 </head>
 <body>
 <div class="Glasscontainner">
-
-<u><h3>Patients Basic Information:</h3></u><br>
+<h3>Patients Basic Information :</h3><br>
 <!-- Add Patitents detils  -->
 <form method="POST">
     <div class="form">
         <div class="inputBox">
-            <label>Name</label>
-            <input type="text" name="pname" require>
+            <label>Name</label>&nbsp;
+            <input type="text" name="pname" require>&emsp;
         
 
-            <label>City</label>
-            <input type="text" name="pcity" require>
+            <label>City</label>&nbsp;
+            <input type="text" name="pcity" require>&emsp;
 
-            <label>Mobile</label>
-            <input type="number" name="pmob" require pattern="[789][0-9]{9}">
-            <br><br>
+            <label>Mobile</label>&nbsp;
+            <input type="number" name="pmob" require pattern="[789][0-9]{9}">&emsp;
+            <br><br>&emsp;
 
-            <label>Age</label>
-            <input type="number" name="age" require>
-    
-            <input type="radio" name="genderrediobtn" value="Male">Male
-            <input type="radio" name="genderrediobtn" value="Female">Female
+            <label>Age</label>&nbsp;
+            <input type="number" name="age" require>&emsp;
+
+            <input type="radio" name="genderrediobtn" value="Male">&emsp;Male 
+            <input type="radio" name="genderrediobtn" value="Female">&emsp;Female
+
         </div>
 
         <!-- btn -->
-        <div class="inputBox">
-            <input type="submit" name ="save">
+        <div class="inputBox" style="float: right;"><br>
+            <input type="submit" name ="save">&emsp;
         </div>
 </form>
 </div>
@@ -78,10 +78,37 @@ if(isset($_POST['save'])){
 
     <!-- second containner -->
     <div class="Glasscontiner2">
-        <u><h3>Patients History</h3></u>
+    <h3>Patients History : </h3><br> 
+    <form method="POST">
+    <div class="form">
+        <div class="inputBox">
+            <label>Today's date</label>&nbsp;
+            <input type="date" name="pname" value="<?php echo date('Y-m-d'); ?>" require>&emsp;
         
 
-    </div>
+            <label>Next Date Of Visit</label>&nbsp;
+            <input type="date" name="pcity" require>&emsp;
 
+            <!-- <label>Mobile</label>&nbsp;
+            <input type="number" name="pmob" require pattern="[789][0-9]{9}">&emsp;
+            <br><br>&emsp;
+
+            <label>Age</label>&nbsp;
+            <input type="number" name="age" require>&emsp;
+
+            <input type="radio" name="genderrediobtn" value="Male">&emsp;Male 
+            <input type="radio" name="genderrediobtn" value="Female">&emsp;Female -->
+
+        </div>
+
+        <!-- btn -->
+        <div class="inputBox" style="float: right;"><br>
+            <input type="submit" name ="save" value="Add">&emsp;
+        </div>
+</form>
+
+    </div>
+    <!-- javascript -->
+    <script src="main.js"></script>
 </body>
 </html>

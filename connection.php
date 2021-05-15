@@ -48,4 +48,23 @@ else{
     echo "The users table was not created successfully because of this error ---> ". mysqli_error($conn);
 }
 
+
+$sql1 = "CREATE TABLE IF NOT EXISTS Patients (
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    name varchar(255),
+    city varchar(255),
+    mobile bigint(10),
+    age int(11),
+    gender varchar(255)
+    )";
+$result1 = mysqli_query($conn, $sql1);
+
+// Check for the table creation success
+if($result1){
+    // echo "The Users table was created successfully!<br>";
+}
+else{
+    echo "The users table was not created successfully because of this error ---> ". mysqli_error($conn);
+}
+
 ?>
