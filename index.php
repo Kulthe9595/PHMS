@@ -38,7 +38,6 @@ if(isset($_POST['Loginbtn'])){
     <link rel="stylesheet" href="Css/style.css">
 </head>
 <body>
-<!-- <center><div class="branding"><h1>PATIENT HISTORY MANAGEMENT SYSTEM</h1></center></div> -->
     <section>
     <div class="color"></div>
     <div class="color"></div>
@@ -62,7 +61,7 @@ if(isset($_POST['Loginbtn'])){
                 <div class="inputBox">
                     <input type="submit" value="Login" name="Loginbtn">
                 </div>
-                <!-- <p class="forget">Forget Password?<a href="#">click here</a></p> -->
+                <p class="forget">Forget Password?<a href="#">click here</a></p>
                 <p class="forget">Don't have an account? <a href="registerusers.php">Sign up</a></p>       
 </form>
 </div>
