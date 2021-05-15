@@ -13,10 +13,10 @@
 
 <body>
     <nav class="navbar" id="nav">
-        <!-- <button class="toggle-menu" id="menu">
+    <button class="toggle-menu" id="menu">
             <i class="fas fa-bars"></i>
-        </button> -->
-       <div class="item-list">
+        </button>
+        <div class="item-list">
                 <span>P H M S</span>
             </div>
         <div class="nav-items">
@@ -36,7 +36,7 @@
                 <div class="icons">
                     <i class="fas fa-users"></i>
                 </div>
-                <span> <a href="AddPatientsByRecp.php">Patients</a></span>
+                <span><a href="AddPatientsByRecp.php">Patients</a></span>
             </div>
             <div class="item-list">
                 <div class="icons">
@@ -46,9 +46,9 @@
             </div>
             <div class="item-list">
                 <div class="icons">
-                    <i class="fas fa-list"></i>
+                <i class="far fa-eye"></i>
                 </div>
-                <span><a href="#">View</a></span>
+                <span href="#">View</span>
             </div>
             <div class="logout">
                 <div class="icons">
@@ -60,7 +60,7 @@
     </nav>
 
     <!-- javascript -->
-    <!-- <script src="main.js"></script> -->
+    <script src="main.js"></script>
 </body>
 
 </html>
